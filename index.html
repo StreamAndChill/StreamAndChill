@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stream &amp; Chill</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+      background-color: aquamarine;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body  style="background-color: #ff6f69;">
+
+<div class="jumbotron" id="header">
+  <div class="container text-center">
+    <img style="width: 80%; height: 25%;" src="logo.png"/>     
+    <h1>Lo streaming fatto facile</h1>      
+    <p>Film e SerieTV in streaming, senza mai pubblicità</p>
+  </div>
+</div>
+
+<div class="container" id="fascio1">    
+  <div class="row">
+    <div class="col-sm-4">
+        <div class="jumbotron text-center" style="background-color: #ff6f69;">
+          <p>Il più vasto catalogo di Film e SerieTV in lingua italiana a tua disposizione. <br><br>Utilizzo facile e immediato, senza pubblicità e completamente gratuito. <br><br>Scarica e installa con un click. <br><br>Versione mobile in arrivo ...</p>
+        </div>
+    </div>
+    <div class="col-sm-4" style="margin-top: 10%">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Download Mac Version</div>
+        <div class="panel-body"><img src="download.ico" class="img-responsive" style="width: 50px;" alt="Image">Versione 1.0</div>
+        <div class="panel-footer">Al primo utilizzo aprire con tasto destro, apri</div>
+      </div>
+    </div>
+    <div class="col-sm-4" style="margin-top: 10%"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Download Windows Version</div>
+        <div class="panel-body"><img src="download.ico" class="img-responsive" style="width: 50px" alt="Image">Versione 1.0</div>
+        <div class="panel-footer">Installazione immediata oneClick</div>
+      </div>
+    </div>
+  </div>
+    
+</div><div class="container" id="fascio2">    
+  <div class="row">
+    <div class="col-sm-8">
+        <div class="jumbotron" style="background-color: #ff6f69;">
+          <img src="screenshot.png" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="jumbotron text-center" style="background-color: #ff6f69;">
+          <p>SerieTV aggiornate con i migliori titoli del momento.<br><br>
+              Catalogate per stagione e episodi.<br><br>
+        </div>
+    </div>
+  </div>
+</div><br>
+<br><br>
+
+<footer class="container-fluid text-center">
+  <p>Develped by DareDevelopers</p> 
+    <a href="disclaimer.html" class="btn btn-danger">Disclaimer</a>
+    <a href="medium" class="btn btn-info">Blog</a>
+</footer>
+    
+    <script>
+        onchange(altezza());
+        function altezza()
+        {
+            var h=window.innerHeight;
+            document.getElementById("header").style="height: "+h+"px";
+        }
+    </script>
+
+</body>
+</html>
